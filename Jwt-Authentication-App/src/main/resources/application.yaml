@@ -1,0 +1,24 @@
+server:
+  port: 6064
+
+secret:
+  key: 1B7E151628AED2A6ABF7158809CF4F3C483405AEDA5B7A689151657A46B8E5
+
+spring:
+  data:
+    rest:
+      base-path: /api
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: hbstudent
+    password: hbstudent
+    url: jdbc:mysql://localhost:3306/jwt_auth_app
+  jpa:
+    hibernate:
+      ddl-auto: create-drop
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+        dialect: org.hibernate.dialect.MySQLDialect
+    generate-ddl: true
